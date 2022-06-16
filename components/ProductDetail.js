@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   Button,
   StyleSheet,
+  ToastAndroid,
 } from 'react-native';
 import cartStore from '../stores/cartStore';
 import productStore from '../stores/productStore';
@@ -24,6 +25,7 @@ export function ProductDetail({ route }) {
           <Button
             onPress={() => {
               cartStore.addItem(product);
+              ToastAndroid.show("Added to cart", ToastAndroid.SHORT);
             }}
             title="Add to cart"
           />

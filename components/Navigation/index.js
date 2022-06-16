@@ -9,9 +9,9 @@ const RootNavigator = () => {
   const { Navigator, Screen } = createStackNavigator();
   return (
     <Navigator
-      screenOptions={{
-        headerShown: false,
-      }}
+      // screenOptions={{
+      //   headerShown: false,
+      // }}
     >
       <Screen name="ProductsList" component={ProductsList} />
       <Screen
